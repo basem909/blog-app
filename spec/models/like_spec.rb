@@ -4,7 +4,7 @@ RSpec.describe Like, type: :model do
   context 'Testing like validations and methods' do
     user1 = User.create(name: 'Jack', photo: 'photo profile', bio: 'dev and stuff', posts_counter: 0)
     post1 = Post.create(author: user1, title: 'Hello world', text: 'This is my first post', comments_counter: 0,
-                       likes_counter: 0)
+                        likes_counter: 0)
     like = Like.create(post: post1, author: user1)
 
     it 'author_id should be equal to user_id' do
