@@ -1,1 +1,15 @@
-Here will be the chosen user out of users list
+ <%= render 'user', user: @user %>
+ <div>
+ <h2>Bio:</h2>
+ <p><%= @user.bio %></p>
+ </div>
+
+ <div>
+ <h2> Recent posts:</h2>
+ <% @user.recent_posts.each do |post| %>
+  
+  <h3><%= post.title %></h3>
+  <p><%= post.text %></p>
+  <% end %>
+ </div>
+  
