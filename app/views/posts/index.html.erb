@@ -1,1 +1,11 @@
-Here is a list of posts for a given user
+<div><%= render 'users/user', user: @user %></div>
+<% @user.posts.each do |post| %>
+  <div class="post">
+  <%= render 'post', post: post %>
+  </div>
+  <div class="comment">
+  <% post.recent_comments.each do |comment| %>
+    <%= render 'comment', comment: comment %>
+    <% end %>
+    </div>
+  <% end %>

@@ -1,1 +1,15 @@
-Here will be the chosen post out of the list of posts
+<div class="post">
+  <div class="post-show">
+    <h3><%= @post.title %> by <%= @post.author.name%> </h3>
+    <span class='react'>
+    <p class='small'>comments: <%= @post.comments_counter %></p>
+    <p class='small'> Likes: <%= @post.likes_counter %></p>
+    </span>
+  </div>
+  <p class='post-text'><%= @post.text %></p>
+</div>
+<div class="comment">
+  <% @comments.each do |comment| %>
+    <p><%= @post.author.name%> : <%= comment.text %></p>
+  <% end %>
+</div>
