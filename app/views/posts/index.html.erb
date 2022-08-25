@@ -1,1 +1,7 @@
-Here is a list of posts for a given user
+<%= render 'users/user', user: @user %>
+<% @user.posts.each do |post| %>
+  <%= render 'post', post: post %>
+  <% post.recent_comments.each do |comment| %>
+    <%= render 'comment', comment: comment %>
+    <% end %>
+  <% end %>

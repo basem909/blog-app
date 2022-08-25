@@ -1,1 +1,4 @@
-Here will be the chosen post out of the list of posts
+<%= render 'post', post: @post %>
+<% @comments.each do |comment| %>
+  <%= render 'comment', comment: comment %>
+  <% end %>
