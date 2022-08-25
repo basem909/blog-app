@@ -31,4 +31,3 @@ Comment.create(post: fifth_post, author: second_user, text: 'so you enjoy your t
 Comment.create(post: fifth_post, author: first_user, text: 'Same here')
 
 Like.create(post: first_post, author: second_user)
-

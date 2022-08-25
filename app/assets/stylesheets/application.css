@@ -16,15 +16,15 @@
 .user-card {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   margin: 3vw;
-  height:min-content;
+  height: min-content;
 }
 
 .user-info {
   display: flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: flex-end;
   width: 70vw;
   height: inherit;
   padding: 1.5vw;
@@ -36,27 +36,29 @@
   font-size: 5vw;
 }
 
+p {
+  font-size: 2.5vw;
+  margin: 1vw;
+}
+
 .user-info > p {
   font-size: 2vw;
 }
 
 .user-card > img {
   width: 15vw;
-  height:18vw;
+  height: 18vw;
 }
 
 h3 {
   font-size: 5vw;
   margin: 0;
-  margin-top: .8vw;
+  margin-top: 0.8vw;
 }
 
-p {
-  font-size: 2.5vw;
-  margin: 1vw;
-}
-
-.bio, .post, .comment {
+.bio,
+.post,
+.comment {
   margin: 3vw;
   border: groove 2px;
   border-radius: 3px;
@@ -64,18 +66,18 @@ p {
 }
 
 .all-posts {
-position:absolute;
-left: 42%;
-border: groove 2px;
-border-radius: 3px;
-padding: 1.5vw;
-cursor: pointer;
+  position: absolute;
+  left: 42%;
+  border: groove 2px;
+  border-radius: 3px;
+  padding: 1.5vw;
+  cursor: pointer;
 }
 
 .react {
   display: flex;
   justify-content: flex-end;
-  align-items:baseline;
+  align-items: baseline;
   gap: 3vw;
   padding-right: 1.5vw;
   font-size: 2vw;
@@ -89,7 +91,7 @@ cursor: pointer;
   font-size: 3vw;
   font-style: italic;
   margin: 0;
-  margin-top: .5vh;
+  margin-top: 0.5vh;
 }
 
 .post-show {
