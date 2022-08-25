@@ -45,7 +45,18 @@
   height:18vw;
 }
 
-.bio, .post {
+h3 {
+  font-size: 5vw;
+  margin: 0;
+  margin-top: .8vw;
+}
+
+p {
+  font-size: 2.5vw;
+  margin: 1vw;
+}
+
+.bio, .post, .comment {
   margin: 3vw;
   border: groove 2px;
   border-radius: 3px;
@@ -67,5 +78,30 @@ cursor: pointer;
   align-items:baseline;
   gap: 3vw;
   padding-right: 1.5vw;
+  font-size: 2vw;
+}
+
+.comment {
+  margin-top: -3vw;
+}
+
+.comment > div > h5 {
+  font-size: 3vw;
+  font-style: italic;
+  margin: 0;
+  margin-top: .5vh;
+}
+
+.post-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.post-text {
+  font-size: 3vw;
+}
+
+.small {
   font-size: 2vw;
 }
