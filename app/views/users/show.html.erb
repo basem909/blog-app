@@ -1,14 +1,12 @@
  <%= render 'user', user: @user %>
- <div>
- <h2>Bio:</h2>
+ <div class='bio'>
+ <h3>Bio:</h3>
  <p><%= @user.bio %></p>
  </div>
 
- <div>
- <h2> Recent posts: </h2>
  <% @user.recent_posts.each do |post| %>
+  <div class='post'>
   <%= render 'posts/post', post: post %>
+  </div>
   <% end %>
-  <a>See all posts</a>
- </div>
-  
+  <a class='all-posts'>See all posts</a>
