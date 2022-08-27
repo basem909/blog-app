@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
     @comment.save
     redirect_to user_post_path(params['user_id'], params['post_id'])
   end
+
   private
 
   def comment_params
