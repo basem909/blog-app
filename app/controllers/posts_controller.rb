@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:post_id])
+    @post = Post.find(params[:id])
     @comments = Comment.where post: @post
     @user = current_user
   end
@@ -20,6 +20,7 @@ class PostsController < ApplicationController
     @post.author = current_user
     @post.likes_counter = 0
     @post.comments_counter = 0
+    Rails.logger.debug("My post: #{@post.inspect}")
     @post.save
     redirect_to user_posts_path(current_user)
   end

@@ -1,0 +1,11 @@
+<h1>Add a new comment</h1>
+<%= form_with model: @comment, url: user_post_comments_path(user_id: @user, post_id: @post) do |form|%>
+
+  <div class='mb-3'>
+  <%= form.text_area :text, class: 'form-control', placeholder: 'Write your comment here' %>
+  </div>
+  
+  <div class='mb-3'>
+  <%= form.submit 'new comment' ,class: 'btn btn-primary'%>
+  </div>
+  <% end %>
