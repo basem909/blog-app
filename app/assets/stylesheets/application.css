@@ -12,7 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
+
 .user-card {
   display: flex;
   justify-content: space-between;
